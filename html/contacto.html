@@ -33,12 +33,13 @@
       </div>
     </nav>
   </header>
+  
   <main>
-    <section class="container-fluid text-center">
-      <h1>Contacto</h1>
+    <section class="container-fluid">
+      <h1 class="text-center my-4">Contacto</h1>
       <div class="row">
-        <article class="col-lg-6">
-          <form action="#" method="get" class="">
+        <article class="col-lg-6 mb-4">
+          <form action="#" method="get" class="p-3">
             <div class="form-floating mb-3">
               <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
               <label for="nombre">Nombre y Apellido</label>
@@ -48,29 +49,34 @@
               <label for="email">Email</label>
             </div>
             <div class="form-floating mb-3">
-              <textarea class="form-control" placeholder="Mensaje" id="Mensaje" name="Mensaje" maxlength="600" style="height: 250px;" ></textarea>
+              <textarea class="form-control" placeholder="Mensaje" id="Mensaje" name="Mensaje" maxlength="600" style="height: 250px;"></textarea>
               <label for="Mensaje">Mensaje</label>
             </div>
-            <input type="submit" value="Enviar" class="form-control mx-auto mb-3">
+            <input type="submit" value="Enviar" class="btn btn-primary w-100 mb-3">
+          </form>
         </article>
-        <div class="col-lg-6">
-          <article class="row mapa">
-            <div>
+        
+        <div class="col-lg-6 d-flex flex-column align-items-center gap-3">
+          <!-- Mapa cuadrado -->
+          <div class="mapa-cuadrado w-75 w-md-50 w-lg-100 mx-auto">
+            <div class="ratio ratio-1x1">
               <iframe 
                 src="https://www.openstreetmap.org/export/embed.html?bbox=-57.8482%2C-38.1635%2C-57.8282%2C-38.1435&layer=mapnik&marker=-38.1535%2C-57.8382"
-                width="350px"
-                height="350px">
+                style="border: 1px solid black;">
               </iframe>
             </div>
-          </article>
-          <article class="row">
-            <h2>Dirección</h2>
-            <p>Ruta Provincial 88, Km 52<br>Cerca de Comandante Nicanor Otamendi<br>Provincia de Buenos Aires, Argentina</p>
-          </article>
+          </div>
+          
+          <!-- Dirección -->
+          <div class="direccion-contenedor w-75 w-md-50 w-lg-100 text-center p-3 bg-light rounded">
+            <h2 class="h4 mb-2">Dirección</h2>
+            <p class="mb-0">Ruta Provincial 88, Km 52<br>Cerca de Comandante Nicanor Otamendi<br>Provincia de Buenos Aires, Argentina</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
+  
   <footer>
     <p>© 2025 Papa's Jhonson Studios & inc. Todos los derechos reservados.<br>Telefono de contacto: 0800-888-8888<br>Email: papas@jhonson.com</p>    
   </footer>
