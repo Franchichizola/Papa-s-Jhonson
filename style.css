@@ -1,5 +1,16 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     background-color: beige;
+}
+
+main {
+    flex: 1;
 }
 
 footer {
@@ -8,10 +19,6 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: 50px;
-}
-
-.producto:hover {
-    transform: scale(1.05);
 }
 
 textarea {
@@ -33,4 +40,22 @@ article {
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+
+.mapa {
+    aspect-ratio: 2/1;
+}
+
+.producto {
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+}
+
+.divcontacto {
+    display: flex;
+    align-items: center;
 }
