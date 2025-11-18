@@ -14,6 +14,7 @@ main {
 }
 
 footer {
+<<<<<<< HEAD
     background: #111;
     color: #fff;
     text-align: center;
@@ -21,6 +22,31 @@ footer {
     margin-top: 50px;
 }
 
+=======
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+}
+.mapa {
+    aspect-ratio: 2/1;
+}
+.producto {
+    transition: transform 0.3s ease-in-out;
+}
+.producto:hover{
+    transform: scale(1.05);
+}
+.imagenes {
+    display: flex;
+    justify-content: center;
+}
+.divcontacto{
+    display: flex;
+    align-items: center;
+}
+>>>>>>> c4c3b032da9f8159da3430ab1751a095fd42fcfb
 textarea {
     resize: none;
 }

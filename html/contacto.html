@@ -39,17 +39,22 @@
       <div class="row">
         <article class="col-lg-6">
           <form action="#" method="get" class="">
-            <label for="nombre">Nombre y Apellido</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" required class="form-control mx-auto mb-3">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Email" required class="form-control mx-auto mb-3">
-            <label for="Mensaje">Mensaje</label>
-            <textarea name="Mensaje" id="Mensaje" rows="11" maxlength="600" class="form-control mx-auto mb-3" ></textarea>
-            <input type="submit" value="Envíar" class="form-control mx-auto mb-3">
-          </form>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+              <label for="nombre">Nombre y Apellido</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+              <label for="email">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea class="form-control" placeholder="Mensaje" id="Mensaje" name="Mensaje" maxlength="600" style="height: 250px;" ></textarea>
+              <label for="Mensaje">Mensaje</label>
+            </div>
+            <input type="submit" value="Enviar" class="form-control mx-auto mb-3">
         </article>
         <div class="col-lg-6">
-          <article class="row" style="aspect-ratio: 2/1;">
+          <article class="row mapa">
             <div>
               <iframe 
                 src="https://www.openstreetmap.org/export/embed.html?bbox=-57.8482%2C-38.1635%2C-57.8282%2C-38.1435&layer=mapnik&marker=-38.1535%2C-57.8382"
